@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>A game of Hangman</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 <body>
-	
+
+	<section class="hangman_illustration">
+	</section>
+
+	<section class="correct_letters">
+		<h4>Street Name:</h4>
+		<h2>_ _ _ _ _ _</h2>
+	</section>
+
+	<form action="index.html">
+		<label for="guessbox">Next letter to guess?</label>
+		<input type="text" name="guessbox" class="guessbox" />
+		<button>Guess letter</button>
+	</form>
+
+	<section class="guessed_letters">
+		<ul>
+			<li>E</li>
+			<li>B</li>
+			<li>Q</li>
+		</ul>
+	</section>
+
+	<section class="current_stats">
+		<ul>
+			<li>Wrong guesses: 0/10</li>
+			<li>Correct guesses: 0/6</li>
+		</ul>
+	</section>
+
 <script src="js/main.js"></script>
 </body>
 </html>
